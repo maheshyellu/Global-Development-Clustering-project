@@ -119,5 +119,5 @@ This makes the system practical and user-friendly.
 - Seaborn
 
 - Streamlit
-- 
+ 
 - SciPy
