@@ -1,6 +1,6 @@
 # Global-Development-Clustering-project
 
-Project Overview
+## Project Overview
 
 This project analyzes global socio-economic indicators to identify patterns among countries and classify them into development categories.
 
@@ -8,7 +8,7 @@ The system combines unsupervised learning (KMeans clustering) and supervised lea
 
 The final output is a Streamlit-based web application that allows users to input country-level indicators and receive a predicted development category.
 
- Objective
+ ## Objective
 
 The main objective of this project is:
 
@@ -16,69 +16,69 @@ To group countries into meaningful development segments based on measurable soci
 
 To build a predictive system capable of classifying new data into those segments.
 
- Dataset & Features
+ ## Dataset & Features
 
 The dataset contains 16 socio-economic indicators, including:
 
-GDP-related metrics
+- GDP-related metrics
 
-Birth rate
+- Birth rate
 
-Business tax rate
+- Business tax rate
 
-Days to start a business
+- Days to start a business
 
-Health and economic indicators
+- Health and economic indicators
 
 These features represent economic strength, development infrastructure, and demographic factors.
 
- Methodology
-1️ Data Preprocessing
+ ## Methodology
+### 1️.Data Preprocessing
 
-Cleaned and structured the dataset
+- Cleaned and structured the dataset
 
-Selected relevant features
+- Selected relevant features
 
-Applied RobustScaler for feature scaling
+- Applied RobustScaler for feature scaling
 
-Why scaling was necessary:
+### Why scaling was necessary:
 KMeans uses Euclidean distance. Since features like GDP and birth rate are on different scales, scaling ensures fair contribution from all variables. RobustScaler was used to reduce sensitivity to extreme outliers.
 
-2️ Country Segmentation (Unsupervised Learning)
+### 2️.Country Segmentation (Unsupervised Learning)
 
-Applied KMeans clustering (k = 3)
+- Applied KMeans clustering (k = 3)
 
-Identified natural groupings of countries
+- Identified natural groupings of countries
 
-Analyzed cluster-wise feature averages to interpret results
+- Analyzed cluster-wise feature averages to interpret results
 
-The three segments were interpreted as:
+- The three segments were interpreted as:
 
-Emerging & Developing
+### Emerging & Developing
 
-Least Developed
+### Least Developed
 
-Developed Superpowers
+### Developed Superpowers
 
-Cluster Distribution:
+## Cluster Distribution:
 
-Emerging & Developing → 2045 countries
+- Emerging & Developing → 2045 countries
 
-Least Developed → 97 countries
+- Least Developed → 97 countries
 
-Developed Superpowers → 21 countries
+- Developed Superpowers → 21 countries
 
 The imbalance reflects real-world global economic distribution.
 
-3️ Development Category Prediction (Supervised Learning)
+### 3.Development Category Prediction (Supervised Learning)
 
-To enable real-time prediction:
+### To enable real-time prediction:
 
 Cluster labels were used as target variables.
 
 A Support Vector Machine (SVM) classifier was trained on the segmented data.
 
-Why SVM?
+### Why SVM?
 
 SVM was chosen because:
 
@@ -90,7 +90,7 @@ It is effective for structured classification problems after clustering.
 
 The trained model and scaler were saved using pickle for deployment.
 
-4️ Deployment using Streamlit
+### 4️.Deployment using Streamlit
 
 An interactive Streamlit web application was built to:
 
@@ -104,7 +104,7 @@ Display classification results in real-time
 
 This makes the system practical and user-friendly.
 
- Technologies Used
+## Technologies Used
 
 Python
 
