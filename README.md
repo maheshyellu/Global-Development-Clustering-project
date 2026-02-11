@@ -12,9 +12,9 @@ The final output is a Streamlit-based web application that allows users to input
 
 The main objective of this project is:
 
-To group countries into meaningful development segments based on measurable socio-economic features.
+- To group countries into meaningful development segments based on measurable socio-economic features.
 
-To build a predictive system capable of classifying new data into those segments.
+- To build a predictive system capable of classifying new data into those segments.
 
  ## Dataset & Features
 
@@ -74,50 +74,50 @@ The imbalance reflects real-world global economic distribution.
 
 ### To enable real-time prediction:
 
-Cluster labels were used as target variables.
+- Cluster labels were used as target variables.
 
-A Support Vector Machine (SVM) classifier was trained on the segmented data.
+- A Support Vector Machine (SVM) classifier was trained on the segmented data.
 
 ### Why SVM?
 
 SVM was chosen because:
 
-It performs well in high-dimensional feature spaces.
+- It performs well in high-dimensional feature spaces.
 
-It creates strong decision boundaries between classes.
+- It creates strong decision boundaries between classes.
 
-It is effective for structured classification problems after clustering.
+- It is effective for structured classification problems after clustering.
 
-The trained model and scaler were saved using pickle for deployment.
+- The trained model and scaler were saved using pickle for deployment.
 
 ### 4️.Deployment using Streamlit
 
 An interactive Streamlit web application was built to:
 
-Accept 16 socio-economic inputs
+- Accept 16 socio-economic inputs
 
-Scale inputs using the saved RobustScaler
+- Scale inputs using the saved RobustScaler
 
-Predict the development category using the trained SVM model
+- Predict the development category using the trained SVM model
 
-Display classification results in real-time
+- Display classification results in real-time
 
 This makes the system practical and user-friendly.
 
 ## Technologies Used
 
-Python
+- Python
 
-NumPy
+- NumPy
 
-Pandas
+- Pandas
 
-Scikit-learn
+- Scikit-learn
 
-Matplotlib
+- Matplotlib
 
-Seaborn
+- Seaborn
 
-Streamlit
-
-SciPy
+- Streamlit
+- 
+- SciPy
